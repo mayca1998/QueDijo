@@ -184,6 +184,7 @@
 				012D043723838DC000FEA2F3 /* Frameworks */,
 				012D043823838DC000FEA2F3 /* Resources */,
 				483A7886BA8A71C43FCE7A5D /* [CP] Embed Pods Frameworks */,
+				A1E503ED2D28F69569B110A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,6 +386,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QueDijo/Pods-QueDijo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E503ED2D28F69569B110A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueDijo/Pods-QueDijo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueDijo/Pods-QueDijo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QueDijo/Pods-QueDijo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
