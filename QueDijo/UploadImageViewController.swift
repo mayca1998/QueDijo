@@ -9,11 +9,14 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import FirebaseMLVision
 
 
 
 class UploadImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
- var myImage:UIImage?
+    var myImage:UIImage?
+    var textRecognizer: VisionTextRecognizer!
+    
     @IBAction func selectImage(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.delegate = self
@@ -56,8 +59,23 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
         // Dismiss UIImagePickerController to go back to your original view controller
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func translateImage(_ sender: Any) {
+        
+        let visionImage = VisionImage(image: UploadImage.image!)
+        textRecognizer.process(visionImage) { (features, error) in
+        }
+    }
+    
+        
+        
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let vision = Vision.vision()
+        textRecognizer =  vision.onDeviceTextRecognizer()
 
         // Do any additional setup after loading the view.
     }

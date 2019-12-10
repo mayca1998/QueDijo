@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		012D044823838DC100FEA2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012D044623838DC100FEA2F3 /* LaunchScreen.storyboard */; };
 		012D045323838DC100FEA2F3 /* QueDijoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012D045223838DC100FEA2F3 /* QueDijoTests.swift */; };
 		012D045E23838DC100FEA2F3 /* QueDijoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012D045D23838DC100FEA2F3 /* QueDijoUITests.swift */; };
+		01482CFC2398865500267B63 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01482CFB2398865500267B63 /* SpeechViewController.swift */; };
 		09EE920F83BAFFEA402FB76D /* Pods_QueDijo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1552CDA1E012A5FF346DCF1D /* Pods_QueDijo.framework */; };
 		29D3A0C7C101085BD5E57A2C /* Pods_QueDijoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354696678A9FF506C4F840F2 /* Pods_QueDijoTests.framework */; };
 		9BEE0119A76EAC90021DEBC8 /* Pods_QueDijoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE57801EB8529D8D7490EA5 /* Pods_QueDijoUITests.framework */; };
@@ -54,6 +55,7 @@
 		012D045923838DC100FEA2F3 /* QueDijoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueDijoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		012D045D23838DC100FEA2F3 /* QueDijoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueDijoUITests.swift; sourceTree = "<group>"; };
 		012D045F23838DC100FEA2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01482CFB2398865500267B63 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		1552CDA1E012A5FF346DCF1D /* Pods_QueDijo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueDijo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		354696678A9FF506C4F840F2 /* Pods_QueDijoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueDijoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA64FC5E2D364FB92846E1E /* Pods-QueDijoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueDijoUITests.debug.xcconfig"; path = "Target Support Files/Pods-QueDijoUITests/Pods-QueDijoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				012D044923838DC100FEA2F3 /* Info.plist */,
 				0114B01C2393765100D0C93F /* GoogleService-Info.plist */,
 				0114B0182393740900D0C93F /* UploadImageViewController.swift */,
+				01482CFB2398865500267B63 /* SpeechViewController.swift */,
 			);
 			path = QueDijo;
 			sourceTree = "<group>";
@@ -168,7 +171,6 @@
 				5BA64FC5E2D364FB92846E1E /* Pods-QueDijoUITests.debug.xcconfig */,
 				FC066D2750105894BAC3AAB8 /* Pods-QueDijoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -412,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01482CFC2398865500267B63 /* SpeechViewController.swift in Sources */,
 				012D044023838DC000FEA2F3 /* ViewController.swift in Sources */,
 				012D043E23838DC000FEA2F3 /* AppDelegate.swift in Sources */,
 				0114B0192393740900D0C93F /* UploadImageViewController.swift in Sources */,
@@ -473,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -534,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
